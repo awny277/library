@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Books</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <nav>
+    <div><img src="./image/book.png" alt="logo"></div>
+    <ul>
+      <li><a href="./index.html">home</a></li>
+      <li><a href="./contact.html">contact</a></li>
+    </ul>
+  </nav>
+  <header>
+    <article>
+      <p>It All Started With A Book
+      </p>
+      <h2>ALBERT EINSTEIN</h2>
+      </article>
+  </header>
+  <section class="form_section">
+    <h1>Add Book</h1>
+    <form name="form" action="#"  method="GET">
+      <div id="inputs">
+        <p>
+          <label> name </label> </br>
+          <input type="text" name="user" id="user" />
+        </p>
+        <p>
+          <label> discription: </label> </br>
+          <input type="text" name="discription" id="discription" />
+        </p>
+        <p>
+          <label> image Url: </label> </br>
+          <input type="text" name="image" id="image" />
+        </p>
+        <p>
+          <label> author: </label> </br>
+          <input type="text" name="author" id="author" />
+        </p>
+      </div>
+      <p class="login_btn">
+        <input type="button" onclick="validation()"  id="login" value="Add New book" />
+      </p>
+    </form>
+  </section>
+  <div class="container" id="container"></div>
+
+  <div id="tabel_container">
+    <table>
+      <!--  -->
+      <thead>
+        <!--  -->
+        <th>book_code</th>
+        <th>title</th>
+        <th>publisher_code</th>
+        <th>price</th>
+        <!--  -->
+      </thead>
+      <!--  -->
+      <tbody>
+        <!--  -->
+        <!-- <tr>
+          <td></td>
+          <td><sup>&dollar; </sup> <span>19</span> <sup>99</sup> <sub>Year</sub></td>
+          <td><sup>&dollar;</sup> <span>29</span> <sup>99</sup> <sub>year</sub></td>
+          <td><sup>&dollar;</sup> <span>39</span> <sup>99</sup> <sub>year</sub></td>
+
+        </tr> -->
+        <!--  -->
+        <tr>
+          <td>0102</td>
+          <td>Junior Level Books
+            Introduction to Computer</td>
+          <td>203</td>
+          <td>2300 SAR</td>
+
+        </tr>
+        <!--  -->
+        <tr>
+          <td>0126</td>
+          <td>Publish News Letter</td>
+          <td>205</td>
+          <td>2700 SAR</td>
+
+
+        </tr>
+        <!--  -->
+        <tr>
+          <td>01265</td>
+          <td>Client Server Computing</td>
+          <td>207</td>
+          <td>3500 SAR</td>
+
+
+        </tr>
+        <!--  -->
+        <tr>
+          <td>01258</td>
+          <td>Mobile Computing</td>
+          <td>208</td>
+          <td>3800 SAR</td>
+
+
+        </tr>
+        <!--  -->
+        <tr>
+          <td>03265</td>
+          <td> Data Structure Using C</td>
+          <td>202</td>
+          <td>4200 SAR</td>
+
+
+        </tr>
+      </tbody>
+      <!--  -->
+    </table>
+  </div>
+    <footer>
+      <div>
+        all rights are save</div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
